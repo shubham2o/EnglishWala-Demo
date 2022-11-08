@@ -1,0 +1,663 @@
+body {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f4511e;
+    --white: #ffffff;
+    --black: #000000;
+    --lightred: #d9534f;
+    --red: #ff0000;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 3px green;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+/*-------------------------------------
+                            ------- NAVBAR - .nav1 - #iconbar -----
+                            -------------------------------------*/
+
+.nav1 {
+    background-color: var(--orange);
+    letter-spacing: 4px;
+    font: 12px montserrat, sans-serif;
+}
+
+.nav1 .navbar-header .navbar-brand,
+.nav1 .navbar-nav a {
+    color: var(--white);
+}
+
+.nav1 .navbar-nav a:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    font-weight: bolder;
+    text-shadow: 1px 1px var(--black);
+}
+
+#iconbar {
+    background-color: var(--white);
+}
+
+.navbar-toggle:hover {
+    background-color: var(--white);
+}
+
+.navbar-toggle:hover #iconbar {
+    background-color: var(--orange);
+    box-shadow: 1px 1px var(--black);
+}
+
+.nav1 .navbar-nav li.active a {
+    background-color: var(--white) !important;
+    color: var(--red) !important;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+/*--TOP CONTAINER - .topcon - COMPANY --
+                            --------------- EMAIL ------------------
+                            ------------- SUBSCRIBE ---------------*/
+
+.topcon {
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 100px 0px;
+}
+
+.topcon h1 {
+    font: 63px montserrat, sans-serif;
+}
+
+.topcon p {
+    font: 21px montserrat, sans-serif;
+}
+
+.topcon form {
+    font-family: montserrat, sans-serif;
+    margin-top: 20px;
+}
+
+#email,
+#email:link,
+#email:visited {
+    width: 410px;
+    height: 38px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-right: none;
+    outline: none;
+    padding: 0px 16px;
+    font-weight: bold;
+}
+
+#subscribe {
+    margin-left: -3px;
+    padding: 8px 18px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid var(--black);
+    background-color: var(--lightred);
+}
+
+#subscribe:hover {
+    background-color: var(--red);
+    font-weight: bolder;
+}
+
+
+/*------ @MEDIA SCREEN {} -------------
+                            -------- EMAIL - SUBSCRIBE ------------
+                            -------- NAVBAR & --------------------- 
+                            ------- .topcon HEADING -------------*/
+
+@media screen and (max-width: 569px) {
+    .navbar-nav {
+        border-top: 1px solid var(--white);
+    }
+    #subscribe {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-top: 10px;
+    }
+    #email {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-right: 1px solid var(--black) !important;
+    }
+    .topcon h1 {
+        font: 36px montserrat, sans-serif !important;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #email {
+        width: 235px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 369px) {
+    #email {
+        width: 235px;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 389px) {
+    #email {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 408px) {
+    #email {
+        width: 265px;
+    }
+}
+
+@media screen and (min-width: 409px) and (max-width: 430px) {
+    #email {
+        width: 280px;
+    }
+}
+
+
+/*------- ABOUT COMPANY PAGE --------------
+                            --------- OUR VALUES ----------------------
+                            -------- .acp_con-flu || .our -------------
+                            -------- .acp || .our_row -----------------
+                            -------- .acp_col1 || .our_col2 -----------
+                            -------- .btn (Get in Touch) --------------
+                            -------- .acp_col2 || .our_col1 -----------
+                            -------- #bargraph || #globe ------------*/
+
+.acp_con-flu,
+.our {
+    /*------------ .our -------------*/
+    padding-top: 30px;
+}
+
+.acp,
+.our_row {
+    /*---------- .our_row -----------*/
+    padding: 40px;
+    font-family: Lato, sans-serif;
+}
+
+.acp_col1,
+.our_col2 {
+    /*---------- .our_col_2 ---------*/
+    position: relative;
+    padding-top: 1px;
+}
+
+.acp .acp_col1 h2,
+.our_row .our_col2 h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.acp .acp_col1 h4,
+.our_row .our_col2 h4 {
+    font-size: 19px;
+    line-height: 28px;
+    padding-top: 20px;
+}
+
+.acp .acp_col1 p,
+.our_row .our_col2 p {
+    font-size: 15px;
+    line-height: 28px;
+    padding-top: 20px;
+}
+
+.acp_col1 .btn {
+    background-color: var(--orange);
+    border-radius: 15px;
+    border: 1px solid var(--black);
+}
+
+.acp_col1 .btn a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: lighter;
+}
+
+.acp_col1 .btn:hover {
+    background-color: var(--red);
+}
+
+.acp_col1 .btn:hover a {
+    font-weight: bolder;
+}
+
+.acp_col1 .btn:active {
+    background-color: var(--white);
+    border: 3px solid var(--orange);
+}
+
+.acp_col1 .btn:active a {
+    color: var(--black);
+    font-weight: lighter;
+}
+
+.acp_col2,
+.our_col1 {
+    /*---------- .our_col_1 --------------*/
+    padding: 2px 0px 2px 15px;
+}
+
+#bargraph,
+#globe {
+    /*------------ #globe -----------------*/
+    color: var(--orange);
+    font-size: 200px;
+}
+
+
+/*--------------------------------------
+                            ------------ MEDIA SCREEN {} -----------
+                            ----------- .btn (Get in Touch) --------
+                            ----------- .acp_col2 ------------------
+                            ----------- .our_col_1 -----------------
+                            --------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .acp_col1 .btn {
+        width: 100%;
+    }
+    .acp_col2,
+    .our_col1 {
+        /*---------- .our_col_1 --------------*/
+        text-align: center;
+        top: 35px;
+        padding: 35px 0px;
+    }
+}
+
+
+/*-------------- .services -------------
+                            ---------------- .serv_row1 ------------
+                            ------------- .row2_col1 - 2 - 3 -------
+                            ---------------- .serv_row2 ------------
+                            ------------- .row2_col1 - 2 - 3 -----*/
+
+.services {
+    padding-top: 40px;
+    font-family: Lato, sans-serif;
+}
+
+.services h2 {
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.services h4 {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.serv_row1,
+.serv_row2 {
+    margin: 50px 20px;
+}
+
+.row1_col1,
+.row1_col2,
+.row1_col3,
+.row2_col1,
+.row2_col2,
+.row2_col3 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#servicon {
+    margin-top: 0px;
+    font-size: 50px;
+    color: var(--orange);
+}
+
+.serv_row1 .row1_col1 .hfour,
+.serv_row1 .row1_col2 .hfour,
+.serv_row1 .row1_col3 .hfour,
+.serv_row2 .row2_col1 .hfour,
+.serv_row2 .row2_col2 .hfour,
+.serv_row2 .row2_col3 .hfour {
+    margin-top: 15px;
+    font-size: 19px;
+}
+
+.serv_row1 .row1_col1 p,
+.serv_row1 .row1_col2 p,
+.serv_row1 .row1_col3 p,
+.serv_row2 .row2_col1 p,
+.serv_row2 .row3_col2 p,
+.serv_row2 .row2_col3 p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 35px;
+}
+
+
+/*-------------- .portfolio ------------
+                            ---------------- .port_row -------------
+                            ---------------- .thumbnail ------------
+                            ---------------- .thumb_p1 -------------
+                            ---------------- .carousel -----------*/
+
+.portfolio {
+    padding-top: 40px;
+    font-family: Lato, sans-serif;
+    background-color: #dddddd;
+}
+
+.portfolio h2 {
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.portfolio h4 {
+    font-size: 19px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.port_row {
+    margin: 0px 5px 5px;
+}
+
+.port_row img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.port_row .thumbnail {
+    padding: 20px;
+    background-color: #424642;
+    border-radius: 60px;
+    box-shadow: 15px 15px var(--black);
+}
+
+.port_row .thumbnail .thumb_p1 {
+    margin: 15px 0px;
+    font: 20px Lato, sans-serif;
+    letter-spacing: 5px;
+    color: var(--orange);
+    font-weight: bolder;
+    text-shadow: 1px 1px var(--orange);
+}
+
+.port_row .thumbnail .help-block {
+    font: 15px Lato, sans-serif;
+    color: var(--white);
+}
+
+.portfolio h2 {
+    margin: 60px 0px;
+}
+
+.glyphicon-chevron-left,
+.glyphicon-chevron-right {
+    color: var(--orange);
+}
+
+.slide {
+    background-color: #424642;
+    margin: 70px 50px;
+    padding: 30px 20px;
+    border-radius: 70px;
+    border: 2px solid var(--black);
+}
+
+.carousel-inner em {
+    color: var(--orange);
+    word-spacing: 4px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.carousel-inner span {
+    color: var(--white);
+}
+
+.slide .left,
+.slide .right {
+    margin: 80px 0px;
+    border-radius: 120px;
+}
+
+
+/*--------------------------------------
+                            ---------------- .pricing --------------
+                            ---------------- .panel ----------------
+                            --------------------------------------*/
+
+.pricing {
+    text-align: center;
+}
+
+.pricing h2 {
+    font: 24px Lato, sans-serif;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+
+.pricing p {
+    font: 19px Lato, sans-serif;
+    margin: 30px 0px;
+}
+
+.pricing .row {
+    margin: 0px 30px;
+}
+
+.pricing .panel {
+    border-radius: 50px;
+    margin-bottom: 70px;
+}
+
+.pricing .panel:hover {
+    box-shadow: 0px 0px 20px var(--black);
+}
+
+.pricing .panel:hover .panel-heading,
+.pricing .panel:hover .panel-footer {
+    border: none !important;
+}
+
+.panel-heading {
+    padding-bottom: 18px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    color: var(--orange) !important;
+    border-top: 2px solid var(--black) !important;
+    font: 36px Lato, sans-serif;
+}
+
+.panel-body {
+    padding-bottom: 0px;
+}
+
+.panel-body p {
+    margin-top: 9px;
+    font: 15px Lato, sans-serif;
+}
+
+.panel-footer {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom: 2px solid var(--black) !important;
+    padding-bottom: 30px;
+}
+
+.panel-footer .btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font: 18px Lato, sans-serif;
+}
+
+.panel-footer .btn:hover {
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+}
+
+.panel-footer h3,
+.panel .btn {
+    margin-top: 15px;
+}
+
+.panel-footer h3 {
+    font: 35px Lato, sans-serif;
+}
+
+.panel-footer h4 {
+    font: 14px Lato, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+
+/*------------------ CONTACT --------------------
+                            ------------------- .concol1 --------------------
+                            ------------------- .concol2 --------------------
+                            --------- .row1 - .row1col1 , .row1col2 ---------
+                            --------------- .row2 - .row2col1 -------------*/
+
+.contact {
+    margin-top: 10px;
+    background-color: #dddddd;
+}
+
+.contact h3 {
+    margin-top: 60px;
+    margin-bottom: 35px;
+    font: 24px Lato, sans-serif;
+    font-weight: bolder;
+}
+
+.contact .row {
+    margin: 0px 22px;
+}
+
+.contact .concol1 {
+    font: 15px Lato, sans-serif;
+    color: #787a91;
+    font-weight: bolder;
+    word-spacing: 1px;
+    line-height: 24px;
+}
+
+.contact .concol1 a {
+    text-decoration: none;
+}
+
+.concol2 .row1 {
+    margin: 0px -15px;
+}
+
+.concol2 .row2 {
+    margin: 18px -15px;
+}
+
+.row2col1 textarea {
+    height: 100px;
+}
+
+.concol2 .row3 {
+    margin: 23px -15px;
+    text-align: right;
+}
+
+.concol2 .row3 button {
+    margin-right: 15px;
+    padding: 8px 20px;
+    font: 18px Lato, sans-serif;
+}
+
+
+/*---------------------------------------
+                            ------------ MEDIA SCREEN {} ------------
+                            -- .concol2 .row1 .row1col1 , .row1col2--
+                            ---------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .concol2 .row1 .row1col1,
+    .concol2 .row1 .row1col2 {
+        margin-top: 10px;
+    }
+    .concol2 .row1 .row1col2 {
+        margin-bottom: 15px;
+    }
+}
+
+
+/*----------------------------------------
+                            ------------------- MAP ------------------
+                            ----------------------------------------*/
+
+.map {
+    margin: 90px 0px;
+}
+
+
+/*----------------------------------------
+                            ------------------- FOOTER ---------------
+                            ----------------------------------------*/
+
+footer {
+    padding: 80px 0px;
+    background-color: #dddddd;
+}
+
+#totop {
+    display: block;
+    margin-top: -60px;
+}
+
+#footerup {
+    color: var(--orange);
+    font-size: 40px;
+}
+
+footer h3 {
+    font: 20px Lato, sans-serif;
+    margin-top: 35px;
+}
+
+#shubham2o {
+    text-decoration: none;
+    color: navy;
+}
+
+#shubham2o:hover {
+    font-weight: bolder;
+    font-size: 23px;
+}
